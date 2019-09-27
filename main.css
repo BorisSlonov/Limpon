@@ -81,6 +81,14 @@ h1 {
   border: 1px solid #94b4cc;
 }
 
+.btn-subs {
+  position: absolute;
+  top: 5px;
+  right: 6px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
 .title-h2 {
   font-size: 50px;
   font-weight: 600;
@@ -447,21 +455,9 @@ h1 {
   background-color: #edf6ff;
 }
 
-.page-stat {
-  padding: 116px 0 96px 0;
-}
-
 .page-subscribe {
   background: url(../img/bg-subs.png) no-repeat;
   padding: 65px 0 96px 0;
-}
-
-.btn-subs {
-  position: absolute;
-  top: 5px;
-  right: 6px;
-  padding-top: 18px;
-  padding-bottom: 18px;
 }
 
 .page-plan,
