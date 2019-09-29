@@ -176,7 +176,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10vh;
+    padding-top: 30px;
 
 
 }
@@ -271,80 +271,57 @@ h1 {
 
 
 
-.grid h2 {
-    font-size: 40px;
-    color: #192b59;
-    font-weight: 700;
+
+
+
+
+
+.page-grid {
+    width: 100%;
+    padding-bottom: 200px;
+    
 }
 
-.grid h2 span {
-    font-size: 14px;
-    color: #1085e4;
-    display: block;
+.grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+   
 }
 
 .grid-item {
-    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 25%; //почему флекс-басис ломает флекс врап? 
+    height: 350px;
+    max-width: 300px;
+    margin: 20px;
+    box-shadow: 1.5px 3px 3px 1px rgba(6, 6, 250, 0.1);
+}
+.grid-item p {
+    max-width: 80%;
+}
+.page-grid h2 {
+    margin: 50px 0 25px 0;
+}
+.grid-text {
+    max-width: 50%;
+    float: right;
+ 
 }
 
-.grid-item h3 {
-    font-size: 20px;
-    font-weight: 600;
-    color: #192b59;
-}
 
-.grid-item a {
-    font-size: 14px;
-    font-weight: 600;
-    color: #1085e4;
-}
 
-.grid-icon {
-    display: grid;
-    justify-items: start;
-    grid-auto-flow: row;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-}
 
-.grid-icon-1 {
-    background-image: url(../img/1icon.png);
-    width: 79px;
-    height: 84px;
 
-}
 
-.grid-icon-2 {
-    background-image: url(../img/2icon.png);
-    width: 73px;
-    height: 82px;
 
-}
 
-.grid-icon-3 {
-    background-image: url(../img/3icon.png);
-    width: 89px;
-    height: 85px;
 
-}
-
-.grid-icon-4 {
-    background-image: url(../img/4icon.png);
-    width: 102px;
-    height: 94px;
-}
-
-.grid-icon-5 {
-    background-image: url(../img/5icon.png);
-    width: 85px;
-    height: 90px;
-}
-
-.grid-icon-6 {
-    background-image: url(../img/6icon.png);
-    width: 100px;
-    height: 86px;
-}
 
 .list-stat {
     display: flex;
@@ -489,7 +466,7 @@ h1 {
 
 .page-company {
     background: url(../img/company-bg.png);
-    height: 30vh;
+    height: 140px;
 }
 
 .page-stat,
@@ -500,7 +477,7 @@ h1 {
 
 .page-subscribe {
     background: url(../img/bg-subs.png) no-repeat;
-    padding: 65px 0 96px 0;
+    padding: 50px 0;
 
 }
 
@@ -540,6 +517,7 @@ h1 {
 // PAGE SOFTWARE*******************************************
 .page-software {
     display: flex;
+    margin-top: 50px;
     justify-content: flex-start;
     align-items: center;
 
@@ -548,6 +526,7 @@ h1 {
 
 .software-img img {
     max-width: 650px;
+    margin-bottom: -6px;
 }
 
 .software-text {
@@ -615,10 +594,11 @@ h1 {
 // PAGE ANALYTICS*******************************************
 .page-analytics {
     background-image: url(/img/analitics-bg.png);
-    background-position: top left;
+    background-position: bottom left;
     background-size: contain;
     background-repeat: no-repeat;
-    padding-top: 5vh;
+    height: 100%;
+    padding: 40px 0;
     background-color: #99ccff33;
 
     width: 100%;
@@ -649,6 +629,11 @@ h1 {
 
     }
 }
+.page-analytics__item {
+    img {
+        max-width: 448px;
+    }
+}
 
 .content--img {
     border-radius: 10px;
@@ -665,15 +650,18 @@ h1 {
 // PAGE APP*******************************************
 .page-app {
     background-image: url(/img/stat2-bg.png);
-    background-position: top right;
-    background-size: contain;
+    height: 100%;
+    
+    padding: 40px 0;
+    background-position: bottom right;
+    background-size: contain; 
     background-repeat: no-repeat;
-    padding: 10vh 0;
     width: 100%;
 
 
     &__container {
         display: flex;
+        padding: 20px 0;
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
@@ -684,6 +672,7 @@ h1 {
 
     &__item {
         flex-basis: 35%;
+
 
     }
 
@@ -700,9 +689,15 @@ h1 {
 
     }
 }
+.page-app__item .stat2 {
+    width: 100%;
+}
 
-
-
+.page-app__item {
+    img {
+        max-width: 448px;
+    }
+}
 
 .content--img {
     border-radius: 10px;
@@ -741,3 +736,19 @@ h1 {
 }
 
 // PAGE SCREEN*******************************************
+
+
+
+
+
+
+// PAGE CLIENTS********************************************
+.page-clients {
+    background-image: url(/img/clients-bg.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+// PAGE CLIENTS********************************************
