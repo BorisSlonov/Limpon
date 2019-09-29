@@ -1,9 +1,11 @@
-
-html, body {
+html,
+body {
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
     color: #7581a1;
     font-size: 16px;
     line-height: 26px;
+    box-sizing: border-box;
 }
 
 
@@ -19,10 +21,18 @@ h1 {
     line-height: 1.1;
     max-width: 600px;
 }
+
 .wrap {
     max-width: 1110px;
     margin: 0 auto;
 }
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 //Every Project**********************************
 
 
@@ -47,6 +57,7 @@ h1 {
 .btn-primary:hover {
     color: #1085e4;
     background-color: transparent;
+    transition: 1.2s;
 }
 
 .btn-secondary {
@@ -64,6 +75,7 @@ h1 {
 .btn-secondary:hover {
     color: #cbdbe8;
     background-color: #fff;
+    transition: 1.2s;
 }
 
 .btn-free {
@@ -86,17 +98,20 @@ h1 {
 }
 
 .btn-info:hover {
-    color: fff;
+    color: #fff;
     background-color: #94b4cc;
     border: 1px solid #94b4cc;
+    transition: 1.2s;
 }
+
 .btn-subs {
     position: absolute;
-    top: 5px; 
+    top: 5px;
     right: 6px;
     padding-top: 18px;
     padding-bottom: 18px;
 }
+
 //B_T_N******************************************************
 
 
@@ -127,7 +142,7 @@ h1 {
     font-size: 40px;
     letter-spacing: -1.1px;
     font-weight: 600;
-    color: 192b59;
+    color: #192b59;
     line-height: 1.2;
 }
 
@@ -143,21 +158,15 @@ h1 {
 
 }
 
-.page-stat .title-h2,
-.page.screen {
-    text-align: center;
-    margin: 0 auto;
-}
 
-.page-stat .title-h2 {
-    max-width: 500px;
-}
+
 .page-subscribe .title-h2 {
-    text-align: left; 
+    text-align: left;
     color: #fff;
     margin-top: 0;
     margin-bottom: 25px;
 }
+
 .page-subscribe .title-h2 span {
     font-size: 14px;
 }
@@ -168,11 +177,14 @@ h1 {
     justify-content: space-between;
     align-items: center;
     padding-top: 10vh;
-    
+
 
 }
+
 .headerh1 {
-    margin-top: 25vh;
+    margin-top: 20vh;
+    max-width: 50%;
+    position: relative;
 }
 
 .logo {
@@ -194,7 +206,7 @@ h1 {
 
 }
 
-.nav > li {
+.nav>li {
     padding: 0px 20px;
 }
 
@@ -203,21 +215,57 @@ h1 {
     letter-spacing: 2px;
 }
 
+.header__img {
+    position: absolute;
+    right: 0;
+    top: 25vh;
+    width: 100%;
+
+}
+
+.header__img .img__header {
+    float: right;
+    max-width: 550px;
+
+}
+
+
+//PAGE HEADER**************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .list-company {
     display: flex;
     list-style-type: none;
     margin: 0;
-    padding: 0; 
+    padding: 0;
     justify-content: space-between;
     align-items: center;
     max-width: 1110px;
     margin: 0 auto;
     height: 100%;
 }
+
 .list-company-item {
-    display: block; 
+    display: block;
 }
-.btn-group a + a {
+
+.btn-group a+a {
     margin-left: 15px;
 }
 
@@ -234,9 +282,11 @@ h1 {
     color: #1085e4;
     display: block;
 }
+
 .grid-item {
     text-align: center;
 }
+
 .grid-item h3 {
     font-size: 20px;
     font-weight: 600;
@@ -248,45 +298,54 @@ h1 {
     font-weight: 600;
     color: #1085e4;
 }
+
 .grid-icon {
-    display: grid; 
+    display: grid;
     justify-items: start;
     grid-auto-flow: row;
     background-repeat: no-repeat;
     margin: 0 auto;
 }
+
 .grid-icon-1 {
     background-image: url(../img/1icon.png);
     width: 79px;
     height: 84px;
-    
+
 }
+
 .grid-icon-2 {
     background-image: url(../img/2icon.png);
     width: 73px;
     height: 82px;
-    
+
 }
+
 .grid-icon-3 {
     background-image: url(../img/3icon.png);
     width: 89px;
     height: 85px;
-    
+
 }
+
 .grid-icon-4 {
     background-image: url(../img/4icon.png);
     width: 102px;
-    height: 94px;   
-}.grid-icon-5 {
+    height: 94px;
+}
+
+.grid-icon-5 {
     background-image: url(../img/5icon.png);
     width: 85px;
-    height: 90px;   
+    height: 90px;
 }
+
 .grid-icon-6 {
     background-image: url(../img/6icon.png);
     width: 100px;
-    height: 86px;   
+    height: 86px;
 }
+
 .list-stat {
     display: flex;
     justify-content: space-around;
@@ -294,7 +353,7 @@ h1 {
     margin-top: 76px;
 }
 
-.list-stat > li {
+.list-stat>li {
     font-size: 12px;
     font-weight: 700;
     color: #1085e4;
@@ -302,7 +361,7 @@ h1 {
     text-transform: uppercase;
 }
 
-.list-stat > li > span {
+.list-stat>li>span {
     display: block;
     font-size: 60px;
     color: #bacbdc;
@@ -343,7 +402,7 @@ h1 {
     font-size: 14px;
 }
 
-.box-price-item ul > li {
+.box-price-item ul>li {
     margin-bottom: 14px;
 }
 
@@ -366,7 +425,7 @@ h1 {
 
 .box-price-item h3 span {
     font-size: 30px;
-    
+
 }
 
 .box-price-item p {
@@ -387,41 +446,47 @@ h1 {
 .box-price-item h3 span:last-child {
     color: #f7b8ab;
 }
+
 .box-price-item h3 span {
     color: #fff;
 }
+
 .box-subscribe {
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .box-subscribe-text {
     color: #fff;
     font-size: 18px;
     max-width: 437px;
 }
+
 .box-subscribe-user {
-    position: relative; 
+    position: relative;
 }
+
 .box-subscribe-user input {
     color: #fff;
     border: 2px solid #3f5cb1;
-    border-radius: 30px; 
+    border-radius: 30px;
     background-color: transparent;
     padding: 20px 15px;
-    display: block; 
+    display: block;
     width: 100%;
     box-sizing: border-box;
 }
 
 
-.page-header  {
+.page-header {
     background-image: url(../img/1bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-        
+
 }
+
 .page-company {
     background: url(../img/company-bg.png);
     height: 30vh;
@@ -436,13 +501,38 @@ h1 {
 .page-subscribe {
     background: url(../img/bg-subs.png) no-repeat;
     padding: 65px 0 96px 0;
-    
+
 }
 
-.page-plan,
-.page-screen {
-    text-align: center;
+
+
+//PAGE STAT*******************************************
+
+.page-stat {
+    padding: 15vh 0;
+    width: 100%;
+
+    &__item {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
 }
+
+
+
+.title-h2 {
+    text-align: center;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+}
+
+//PAGE STAT*******************************************
+
+
 
 
 
@@ -452,20 +542,202 @@ h1 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-   
+
+
 }
+
 .software-img img {
-   max-width: 650px;
+    max-width: 650px;
 }
+
 .software-text {
-    max-width: 300px;
-    
-    
-    
+    max-width: 450px;
+
+
+
 }
 
 .dl-text {
     max-height: 300px;
     overflow-y: scroll;
 }
+
 // PAGE SOFTWARE*******************************************
+
+
+
+
+
+
+
+
+
+
+// PAGE PLAY*******************************************
+.page-play {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh 0;
+
+    &__item {
+        flex-basis: 45%;
+    }
+
+    &__item ul {
+        padding: 0;
+    }
+
+    &__item--social {
+        list-style: none;
+    }
+
+}
+
+
+
+
+// PAGE PLAY*******************************************
+
+
+
+
+
+
+
+
+
+
+
+
+// PAGE ANALYTICS*******************************************
+.page-analytics {
+    background-image: url(/img/analitics-bg.png);
+    background-position: top left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 5vh;
+    background-color: #99ccff33;
+
+    width: 100%;
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__item {
+        flex-basis: 35%;
+
+    }
+
+    &__item__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100%;
+
+        .btn-primary {
+            margin-top: 0px;
+        }
+
+    }
+}
+
+.content--img {
+    border-radius: 10px;
+    background-color: #94b4cc;
+}
+
+// PAGE ANALYTICS*******************************************
+
+
+
+
+
+
+// PAGE APP*******************************************
+.page-app {
+    background-image: url(/img/stat2-bg.png);
+    background-position: top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 10vh 0;
+    width: 100%;
+
+
+    &__container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+
+    }
+
+    &__item {
+        flex-basis: 35%;
+
+    }
+
+    &__item__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 100%;
+
+        .btn-primary {
+            margin-top: 0px;
+        }
+
+    }
+}
+
+
+
+
+.content--img {
+    border-radius: 10px;
+    background-color: #94b4cc;
+}
+
+// PAGE APP*******************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// PAGE SCREEN*******************************************
+.page-screen {
+    padding-top: 10vh;
+    text-align: center;
+}
+
+.page-screen .screen {
+
+    max-width: 100%;
+}
+
+// PAGE SCREEN*******************************************
