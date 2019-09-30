@@ -32,8 +32,8 @@
             <div class='headerh1'>
                 <h1>Best Software landingpage</h1>
                 <div class='btn-group'>
-                    <a href="#"><button class='btn-primary'>Get started now</button></a>
-                    <a href="#"><button class='btn-secondary'>Learn more</button></a>
+                    <button class='btn-primary'><a href="#">Get started now</a></button>
+                    <button class='btn-secondary'><a href="#">Learn more</a></button>
                 </div>
             </div>
         </div>
@@ -339,26 +339,32 @@
         <div class='wrap'>
             <h2><span>testimonials</span>Our happy clients</h2>
             <div class="box-clients">
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidunt
+                <div class='box-clients__item'>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidunt tempor
+                        incidunt incidunt
                     </p>
                     <p class='name'>Rolin B. Mirano</p>
                     <p class='position'>ceo, uihub</p>
                 </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidunt
+                <div class='box-clients__item'>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidunt tempor
+                        incidunt incidunt
                     </p>
                     <p class='name'>Rolin B. Mirano</p>
                     <p class='position'>ceo, uihub</p>
                 </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidunt
+                <div class='box-clients__item'>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidunt tempor
+                        incidunt incidunt
                     </p>
                     <p class='name'>Rolin B. Mirano</p>
                     <p class='position'>ceo, uihub</p>
                 </div>
             </div>
+        </div>
+
     </section>
+
     <!-- page-clients -->
 
 
@@ -367,10 +373,10 @@
     <!-- page-plan -->
     <section class="page-plan">
         <div class='wrap'>
-            <h2 class='title-40'><span>our plans</span>Pricing plans</h2>
+            <h2 class='title-plan'><span>our plans</span>Pricing plans</h2>
             <div class="box-price">
                 <div class='box-price-item'>
-                    <h3>free</h3>
+                    <h3>Free</h3>
                     <p><strong>starter</strong></p>
                     <ul>
                         <li>Unlimited Users Active</li>
@@ -379,9 +385,11 @@
                         <li>Free Domain Name</li>
                         <li>Free hosting name</li>
                         <li>24x7 Online Support</li>
+
                     </ul>
-                    <a href="" class='btn-info'>Choose Plan</a>
+                    <div><button class='btn-info'><a href="#" alt=''>Choose Plan</a></button></div>
                 </div>
+
                 <div class='box-price-item active'>
                     <h3><span>$</span><span>90</span><span>/mo</span></h3>
                     <p><strong>starter</strong></p>
@@ -392,8 +400,9 @@
                         <li>Free Domain Name</li>
                         <li>Free hosting name</li>
                         <li>24x7 Online Support</li>
+
                     </ul>
-                    <a href="" class='btn-primary'>Choose Plan</a>
+                    <div><button class='btn-primary'><a href="#" alt=''>Choose Plan</a></button></div>
                 </div>
                 <div class='box-price-item'>
                     <h3><span>$</span><span>350</span><span>/mo</span></h3>
@@ -406,63 +415,95 @@
                         <li>Free hosting name</li>
                         <li>24x7 Online Support</li>
                     </ul>
-                    <a href="" class='btn-info'>Choose Plan</a>
+                    <div><button class='btn-info'><a href="#" alt=''>Choose Plan</a></button></div>
                 </div>
             </div>
         </div>
-        </div>
-        <!-- page-plan -->
+    </section>
+    <!-- page-plan -->
 
 
 
 
-        <!-- page-team -->
-        <section class="page-team">
-            <div class='wrap'>
-                <h2 class='title-h2'><span>angels</span>Our Team</h2>
-                <div class="box-team">
-                    <div>
-                        <p>founder</p>
+    <!-- page-team -->
+    <section class="page-team">
+        <div class='wrap'>
+            <h2 class='title-team'><span>angels</span>Our Team</h2>
+            <div class="box-team">
+                <div class='box-team__item'>
+                    <div class='box-team__item__img'><img src="/img/team1.png" alt=""></div>
+                    <div class=box-team__text> <span>founder</span>
                         <p>Ricardo T. Obrein</p>
                     </div>
-                    <div>
+                </div>
+                <div class='box-team__item'>
+                    <div class='box-team__item__img'><img src="/img/team2.png" alt=""></div>
+                    <div class=box-team__text>
                         <p>founder</p>
                         <p>Alberto Del Rio</p>
                     </div>
-                    <div>
+                </div>
+                <div class='box-team__item'>
+                    <div class='box-team__item__img'><img src="/img/team3.png" alt=""></div>
+                    <div class=box-team__text>
                         <p>founder</p>
                         <p>Thomas Alva Adison</p>
                     </div>
                 </div>
             </div>
-            <div class="page-form">
+    </section>
+    <!-- PAGE TRAM -->
+
+
+
+
+
+
+
+
+
+    <section class="page-form">
+        <div class="wrap page-form-flex">
+            <div class="page-form-flex__item page-form__img">
+                <img src="/img/footer-img.png" alt="">
+            </div>
+            <div class="page-form-flex__item page-form__form">
+                <div class='__h2'>
                 <h2>
-                    Start Your Free Trail No Need Credit Card.
+                    Start Your Free Trail<br> No Need Credit Card.
                 </h2>
+            </div>
                 <form action=''>
                     <input type='text' placeholder='Enter Your Name here'>
                     <input type='email' placeholder='Enter Your email here'>
                     <textarea name='TextMessage' placeholder='Enter Your Message here'></textarea>
                 </form>
-                <button type='submit' class='btn-primary'><span></span>submit now</button>
+                <div><button type='submit' class='btn-primary'><span></span>submit now</button></div>
             </div>
-            <div class="footer">
-                <div>
-                    <p>Made With Love and Copyriht by - <a href="">limpon</a></p>
-                    <ul calss='social'>
-                        <li><a href='' target='_blank'></a></li>
-                        <li><a href='' target='_blank'></a></li>
-                        <li><a href='' target='_blank'></a></li>
-                        <li><a href='' target='_blank'></a></li>
-                        <li><a href='' target='_blank'></a></li>
-                    </ul>
+        </div>
+    </section>
 
-                </div>
 
+
+
+    <section class="footer">
+        <div class='footer__flex wrap'>
+            <div>
+                <p>Made With Love and Copyriht by - <a href="">limpon</a></p>
             </div>
-        </section>
+            <div class='footer__ul'>
+                <ul calss='social'>
+                    <li><a href='' target='_blank'><img src="/img/1icon.png" alt=""></a></li>
+                    <li><a href='' target='_blank'></a></li>
+                    <li><a href='' target='_blank'></a></li>
+                    <li><a href='' target='_blank'></a></li>
+                    <li><a href='' target='_blank'></a></li>
+                </ul>
+            </div>
+        </div>
 
-
+        </s>
+    </section>
 
 
 
